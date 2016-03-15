@@ -8,7 +8,7 @@ jQuery(document).ready(function () {
         $('#loading').delay(1000).fadeOut(200);
 
         // Smooth Page Scroll Start
-        // ---------------------------------------------------------------------------------------   
+        // ---------------------------------------------------------------------------------------
         $('.primary-navbar a[href^=#]').click(function (event) {
             event.preventDefault();
             var header_height = $('.header-wrap').outerHeight();
@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
     });
 
     // Smooth Page Scroll Start
-    // ---------------------------------------------------------------------------------------   
+    // ---------------------------------------------------------------------------------------
     $('.primary-navbar a[href^=#]').click(function (event) {
         event.preventDefault();
         var header_height = $('.header-wrap').outerHeight();
@@ -153,7 +153,7 @@ jQuery(document).ready(function () {
     // Countdown Start
     if ($().countdown) {
         var austDay = new Date();
-        austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+        austDay = new Date(2016, 3, 4);
         $('#dealCountdown1').countdown({until: austDay});
         $('#dealCountdown2').countdown({until: austDay});
         $('#dealCountdown3').countdown({until: austDay});
@@ -178,6 +178,3 @@ $("#map").mapmarker({
     center: '121 King Street Melbourne Victoria 3000 Australia',
     markers: myMarkers
 });
-
-
-
