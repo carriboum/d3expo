@@ -54,7 +54,8 @@ $(function () {
                 $form.find('.form-alert').append('' +
                     '<div class=\"alert alert-success registration-form-alert fade in\">' +
                     '<button class=\"close\" data-dismiss=\"alert\" type=\"button\">&times;</button>' +
-                    '<strong>Registration Form Submitted!</strong> We will be in touch soon.' +
+                    '<strong>Registration Form Submitted!</strong> Thank you for entering your information, please click the button to select your ticket.' +
+                    '<a class="theme-btn-2 btn" href="#">Get Your Ticket</a>' +
                     '</div>' +
                     '');
                 $form[0].reset();
