@@ -1,0 +1,22 @@
+/* --------------------------------------------------------------------------
+ * Mochi Projects : Style Additions
+ *
+ * file           : mystyle.css
+ * Desc           : Extra classes nad styles added to jevent template for D3 Conference & Expo 2016
+ * Version        :
+ * Date           : 03/16/16
+ * Author         : Mochi Projects
+ * Author URI     :
+ * Email          :
+ *
+ * Mochi Projects. Copyright 2016. All Rights Reserved.
+ * -------------------------------------------------------------------------- */
+
+
+
+.sponsor-btn {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
