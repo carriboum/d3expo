@@ -5,7 +5,7 @@
         <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>JEvent</title>
+        <title>D3 Conference & Expo</title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -56,7 +56,7 @@
                     <div class="container theme-container">
                         <div class="row">
                             <div class="col-md-3 col-sm-3 logo">
-                                <h2 class="logo-title  wow fadeInUp" data-wow-delay="0.8s" > <a href="#">  <img src="assets/img/logo/d3-nav-logo.png" </a> </h2>
+                                <a href="/"><img class="logo-title  wow fadeInUp" data-wow-delay="0.8s" src="assets/img/logo/d3-nav-logo.svg"></a>
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation" >
                                         <span class="sr-only">Toggle navigation</span>
@@ -68,27 +68,21 @@
                             </div>
                             <div class="col-md-9 col-sm-9 navigation">
                                 <nav class="wow fadeInUp" data-wow-delay="0.8s">
-                                    <div class="collapse navbar-collapse no-padding" id="primary-navigation">
-                                        <ul class="nav navbar-nav pull-right primary-navbar">
-                                            <li class="dropdown active">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Home</a>
+                                        <ul class="nav navbar-nav pull-right primary-navbar hidden-xs">
+                                            <li class="dropdown">
+                                                <a href="#" >About</a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="index.html">Homepage 1</a></li>
-                                                    <li><a href="index-parallax.html">Homepage 2</a></li>
-                                                    <li><a href="index-slider.html">Homepage 3</a></li>
-                                                    <li><a href="index-video.html">Homepage 4</a></li>
-                                                    <li><a href="index-eventbrite.html">Homepage 5</a></li>
+                                                    <li><a href="#about">About D3</a></li>
+                                                    <li><a href="#event-schedule">Schedule</a></li>
+                                                    <li><a href="#brands-slider">Sponsors</a></li>
+                                                    <li><a href="#our-speakers">Speakers</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#jevent">About</a></li>
-                                            <li><a href="#event-schedule">Schedule</a></li>
-                                            <li><a href="#brands-slider">Sponsors</a></li>
-                                            <li><a href="#our-speakers">Speakers</a></li>
                                             <li><a href="#pricing-plans">Pricing </a></li>
-                                            <li><a href="#event-faqs"> Faqs</a></li>
-                                            <li><a href="#home-blog"> Blog</a></li>
-                                            <li><a href="#our-location">Location</a></li>
-                                            <li class="dropdown">
+                                            <!-- <li><a href="#event-faqs"> Faqs</a></li> -->
+                                            <li><a href="#home-blog"> News</a></li>
+                                            <!-- <li><a href="#our-location">Location</a></li> -->
+                                            <!-- <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" >Pages</a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="blog.html">Blog Right Sidebar</a></li>
@@ -97,8 +91,17 @@
                                                     <li><a href="single-blog-left.html">Single Blog Left Sidebar</a></li>
                                                     <li><a href="404-page.html">Error Page</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                         </ul>
+                                      <div class="collapse navbar-collapse no-padding hidden-lg hidden-md" id="primary-navigation">
+                                        <ul class="text-center dropdown-toggle hidden-sm hidden-md hidden-lg primary-navbar" data-toggle="dropdown" role="button" aria-haspopup="true" style="line-height:2.7em;padding-top:15px;font-size:1.4em;">
+                                          <li><a href="#about">About D3</a></li>
+                                          <li><a href="#event-schedule">Schedule</a></li>
+                                          <li><a href="#brands-slider">Sponsors</a></li>
+                                          <li><a href="#our-speakers">Speakers</a></li>
+                                          <li><a href="#pricing-plans">Pricing </a></li>
+                                          <li><a href="#home-blog"> News</a></li>
+                                      </ul>
                                     </div>
                                 </nav>
                             </div>
@@ -113,6 +116,7 @@
             <!-- Banner Start -->
             <section id="owl-demo" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner slider">
+                    <!-- Slide 1 -->
                     <div class="item active">
                         <span class="mask-overlay"></span>
                         <img src="assets/img/background/header-bg-1.jpg" alt="...">
@@ -129,14 +133,15 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
                     <div class="item">
                         <span class="mask-overlay"></span>
-                        <img src="assets/img/background/header-bg-1.jpg" alt="...">
+                        <img src="assets/img/background/header-bg-2.jpg" alt="...">
                         <div class="container theme-container relative-div">
                             <div class="banner-details relative-div white-color text-center upper-text">
-                                <h2 data-wow-delay="0.8s" class="secondery-font wow fadeInDown" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInDown;"> Php Conference In Instanbul </h2>
+                                <h2 data-wow-delay="0.8s" class="secondery-font wow fadeInDown" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInDown;"> Learn From the Pros </h2>
                                 <div class="title-wrap">
-                                    <h3 data-wow-delay="1.8s" class="section-title  wow flipInX" style="visibility: visible; animation-delay: 1.8s; animation-name: flipInX;"> <span> 20.10.2015 </span> </h3>
+                                    <h3 data-wow-delay="1.8s" class="section-title  wow flipInX" style="visibility: visible; animation-delay: 1.8s; animation-name: flipInX;"> <span> Hands on Workshops </span> </h3>
                                 </div>
                                 <div class="countdown-wrapper space-bottom-45">
                                     <div id="dealCountdown2" class="defaultCountdown clearfix"></div>
@@ -206,7 +211,7 @@
             <!-- / Latest Event Ends -->
 
             <!-- Welcome To Jevent Start -->
-            <section id="jevent" class="space-top-45">
+            <section id="about" class="space-top-45">
                 <div class="container theme-container">
                     <div class="title-wrap space-bottom-50">
                         <h2 class="section-heading wow fadeInDown"  data-wow-delay="0.8s"> Welcom To <span class="theme-color"> Jevent </span> </h2>

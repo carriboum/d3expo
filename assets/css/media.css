@@ -2,9 +2,9 @@
     .theme-container{
         padding-left: 15px;
         padding-right: 15px;
-    }  
+    }
 }
-@media (min-width:992px)and (max-width:1024px) { 
+@media (min-width:992px)and (max-width:1024px) {
     .vertical-text{
         top: 79px;
         width: 219px;
@@ -39,7 +39,7 @@
     }
     .schedule-tabs li a .day > b{
         display: block;
-    }   
+    }
 }
 @media (min-width:768px)and (max-width:991px){
     .feature-icon{
@@ -124,25 +124,48 @@
     /*video version*/
     .video-warp iframe{
         min-height: auto;
-    }    
+    }
 }
+
+/* fix primary navbar from wrapping */
+/*@media (max-width:992px) {
+  .primary-navbar {
+      float: left !important;
+      margin: 0;
+      padding: 10px 0;
+      background-color: rgba(0,0,0,.5);
+      width: 100%;
+  }
+  .primary-navbar .open .dropdown-menu {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: relative;
+      margin: 15px;
+  }
+}*/
+
+
 @media (max-width:767px) {
 
+    .header-wrap {
+      background-color: rgba(0,0,0,0.6);
+    }
     .logo .logo-title   {
         float: left;
     }
+
     .primary-navbar {
         float: left !important;
         margin: 0;
         padding: 10px 0;
-        background-color: rgba(0,0,0,.5);
+
         width: 100%;
     }
     .primary-navbar .open .dropdown-menu {
-        background-color: rgba(0, 0, 0, 0.5);
+
         position: relative;
         margin: 15px;
     }
+
     /*home*/
     .banner-wrap{
         min-height: auto;
@@ -152,7 +175,7 @@
         font-size: 24px;
     }
     .jevent-title-1{
-        font-size: 16px;    
+        font-size: 16px;
     }
     .jevent-title-2{
         font-size: 20px;
@@ -162,6 +185,9 @@
     }
     .section-heading{
         font-size: 20px;
+    }
+    .banner-details {
+      margin-top: 25px;
     }
     .banner-details h2{
         font-size: 30px;
@@ -187,7 +213,7 @@
         font-size: 24px;
     }
     .feature-info{
-        padding-top: 0; 
+        padding-top: 0;
         width: calc(100% - 70px);
     }
     .blog-bg{
