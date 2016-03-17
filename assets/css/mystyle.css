@@ -60,7 +60,7 @@
 
 }
 
-/* ------------------------ Single Post Page (News Item) ------------------------ */
+/* ------------------------ Single Post Page (News/Blog Item) ------------------------ */
 .blog-post-wrap {
   margin-left: auto;
   margin-right: auto;
@@ -76,8 +76,12 @@
   display: block;
 }
 
+.trophy-pink {
+  color: #ed3287;
+}
 
-/* Footer */
+
+/* ------------------------ Footer ------------------------ */
 .footer-social-bg {
   background-color: #122a4e;
 }
