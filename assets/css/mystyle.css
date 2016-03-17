@@ -20,3 +20,21 @@
   margin-right: auto;
   margin-top: 3em;
 }
+
+/* FAQ accordion styling */
+.faq-accordion > .panel {
+  border:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  color: #7d7d7d;
+}
+
+.faq-accordion > .panel > .panel-heading {
+  background-color:transparent;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7d7d7d;
+}
