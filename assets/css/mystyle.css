@@ -12,9 +12,13 @@
  * Mochi Projects. Copyright 2016. All Rights Reserved.
  * -------------------------------------------------------------------------- */
 
-/*  Nav Bar  */
+/* ------------------------ Nav Bar------------------------ */
 .header-wrap.slideDownScaleReversedIn {
   background: rgba(8,25,51,0.7) !important;
+}
+
+.header-wrap.header {
+  background: #122a4e;
 }
 
 
@@ -54,4 +58,30 @@
   background: linear-gradient(to right,  #ed3287 1%,#783369 58%,#122a4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed3287', endColorstr='#122a4e',GradientType=1 ); /* IE6-9 */
 
+}
+
+/* ------------------------ Single Post Page (News Item) ------------------------ */
+.blog-post-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+.blog-media {
+  border:none;
+}
+
+.blog-head {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+/* Footer */
+.footer-social-bg {
+  background-color: #122a4e;
+}
+
+.copy-right-bg {
+  background-color: #0b1f3d;
 }
