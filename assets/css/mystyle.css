@@ -12,8 +12,13 @@
  * Mochi Projects. Copyright 2016. All Rights Reserved.
  * -------------------------------------------------------------------------- */
 
+/*  Nav Bar  */
+.header-wrap.slideDownScaleReversedIn {
+  background: rgba(8,25,51,0.7) !important;
+}
 
 
+/* ------------------------ Button to become a sponsor ------------------------ */
 .sponsor-btn {
   display: table;
   margin-left: auto;
@@ -21,7 +26,7 @@
   margin-top: 3em;
 }
 
-/* FAQ accordion styling */
+/* ------------------------ FAQ accordion styling ------------------------ */
 .faq-accordion > .panel {
   border:none;
   background-color:transparent;
@@ -34,7 +39,19 @@
 .faq-accordion > .panel > .panel-heading {
   background-color:transparent;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  font-weight: bold;
   color: #7d7d7d;
+}
+
+
+/* ------------------------  Register Section ------------------------*/
+.register-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed3287+1,783369+58,122a4e+100 */
+  background: #ed3287; /* Old browsers */
+  background: -moz-linear-gradient(left,  #ed3287 1%, #783369 58%, #122a4e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #ed3287 1%,#783369 58%,#122a4e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #ed3287 1%,#783369 58%,#122a4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed3287', endColorstr='#122a4e',GradientType=1 ); /* IE6-9 */
+
 }

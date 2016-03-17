@@ -32,3 +32,21 @@ a:focus {
 .blog-pagination > li > a:focus{
     border-color: #ed3287;
 }
+
+/* ---- Secondary Color ---- */
+.section-heading, .jevent-title-1, .jevent-title-2 {
+    color: #122a4e;
+}
+
+.section-heading-w {
+  font-size: 30px;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.pricing-wrap.featured::before, .theme-btn-2 {
+  background-color: #122a4e;
+}
