@@ -173,13 +173,52 @@ jQuery(document).ready(function () {
 });
 
 
-/*... GOOGLE API ...*/
-var myMarkers = {"markers": [
-        {"latitude": "-37.8176419", "longitude": "144.9554397", "icon": "assets/img/map-locator.png", "baloon_text": '103 Prince St New York, NY 10012, United States'}
-    ]};
+//... GOOGLE API ...
+// var myMarkers = {"markers": [
+//         {"latitude": "25.8404931", "longitude": "-80.2202774", "icon": "assets/img/map-locator.png", "baloon_text": 'Miami Dade College Wolfson Campus<br>300 NE 2nd Ave, Miami, FL 33132, United States'}
+//     ]};
+//
+// $("#map").mapmarker({
+//     zoom: 12,
+//     center: '300 NE 2nd Ave, Miami, FL 33132, United States',
+//     markers: myMarkers
+// });
 
-$("#map").mapmarker({
-    zoom: 15,
-    center: '121 King Street Melbourne Victoria 3000 Australia',
-    markers: myMarkers
+// Multiple map markers
+var map;
+var myOptions = {
+    zoom: 12,
+    center: new google.maps.LatLng(25.8404931, -80.2202774),
+    mapTypeId: 'terrain'
+};
+map = new google.maps.Map($('#map')[0], myOptions);
+
+var addresses = ['300 NE 2nd Ave, Miami, FL 33132', '11380 NW 27th Ave, Miami, FL 33167'];
+
+var contentStringw = '<h4>Miami Dade College Wolfson Campus</h4>'+
+      '<p>300 NE 2nd Ave, Miami FL 33132</p>';
+var contentStringn = '<h4>Miami Dade College North Campus</h4>'+
+      '<p>11380 NW 27th Ave, Miami, FL 33167</p>';
+
+// put this in a loop to check which address it is and change the content: depending
+
+var infowindow = null;
+
+infowindow = new google.maps.InfoWindow({
+  content: contentStringw
 });
+
+for (var x = 0; x < addresses.length; x++) {
+    $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
+        var p = data.results[0].geometry.location
+        var latlng = new google.maps.LatLng(p.lat, p.lng);
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+        });
+
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+    });
+}
