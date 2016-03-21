@@ -19,6 +19,11 @@ if ((isset($_POST['phone'])) && (strlen(trim($_POST['phone'])) > 0)) {
 } else {
     $phone = 'No phone entered';
 }
+if ((isset($_POST['tixtype'])) && (strlen(trim($_POST['tixtype'])) > 0)) {
+    $tixtype = stripslashes(strip_tags($_POST['tixtype']));
+} else {
+    $tixtype = 'No ticket type selected';
+}
 ob_start();
 ?>
 <html>
@@ -43,6 +48,10 @@ ob_start();
     <tr bgcolor="#eeeeff">
         <td>Phone Number</td>
         <td><?php echo $phone; ?></td>
+    </tr>
+    <tr bgcolor="#eeffee">
+        <td>Ticket Type</td>
+        <td><?php echo $tixtype; ?></td>
     </tr>
 </table>
 </body>

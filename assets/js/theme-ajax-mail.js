@@ -43,7 +43,18 @@ $(function () {
             phone = '';
         }
 
-        var dataString = 'first_name=' + first_name + '&last_name=' + last_name + '&email=' + email + '&phone=' + phone;
+        // Ticket Type
+        var tixtype = $form.find('.input-tixtype').val();
+        if (tixtype == 'Student') {
+          tixtype = 'Student';
+        }
+        else {
+          tixtype = 'Professional';
+        }
+
+        var dataString = 'first_name=' + first_name + '&last_name=' + last_name + '&email=' + email + '&phone=' + phone + '&tixtype=' + tixtype;
+
+        // + '&tixtype=' + tixtype // for the ticket selector dropdown
         //alert(dataString); return false;
 
         $.ajax({
