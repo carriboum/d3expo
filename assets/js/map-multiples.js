@@ -1,47 +1,57 @@
-var map;
-var myOptions = {
+//25.77759,-80.191225 (wolfson) and 25.877062,-80.246993 (north)
+
+$(document).ready(function (){
+
+  // create a LatLng object containing the coordinate for the center of the map
+  var latlng1 = new google.maps.LatLng(25.77759,-80.191225);
+
+  //north campus
+  var latlng2 = new google.maps.LatLng(25.877062,-80.246993);
+
+  //center point
+  var centerpt = new google.maps.LatLng(25.8297911,-80.2202138);
+
+  // prepare the map properties
+  var options = {
     zoom: 12,
-    center: new google.maps.LatLng(25.8404931, -80.2202774),
-    mapTypeId: 'terrain'
-};
-map = new google.maps.Map($('#map')[0], myOptions);
+    center: centerpt,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    navigationControl: true,
+    mapTypeControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true
+  };
 
-var addresses = ['300 NE 2nd Ave, Miami, FL 33132', '11380 NW 27th Ave, Miami, FL 33167'];
+  // initialize the map object
+  var map = new google.maps.Map(document.getElementById('map'), options);
 
-var contentStringw = '<h4>Miami Dade College Wolfson Campus</h4>'+
-      '<p>300 NE 2nd Ave, Miami FL 33132</p>';
-var contentStringn = '<h4>Miami Dade College North Campus</h4>'+
-      '<p>11380 NW 27th Ave, Miami, FL 33167</p>';
+  // add Marker
+  var marker1 = new google.maps.Marker({
+    position: latlng1, map: map
+  });
 
-// put this in a loop to check which address it is and change the content: depending
+  // marker for north campus
+  var marker2 = new google.maps.Marker({
+    position: latlng2, map: map
+  });
 
-var infowindow = null;
+  // add listener for a click on the pin
+  google.maps.event.addListener(marker1, 'click', function() {
+    infowindow1.open(map, marker1);
+  });
 
-infowindow = new google.maps.InfoWindow({
-  content: "holding..."
+   // listener for north campus
+  google.maps.event.addListener(marker2, 'click', function() {
+    infowindow2.open(map, marker2);
+  });
+
+  // add information window
+  var infowindow1 = new google.maps.InfoWindow({
+    content:  '<div class="info"><strong>Miami Dade College - Wolfson Campus</strong><br><br>300 NE 2nd Ave<br>Miami, FL 33132</div>'
+  });
+
+  // add information window
+  var infowindow2 = new google.maps.InfoWindow({
+    content:  '<div class="info"><strong>Miami Dade College - North Campus</strong><br><br>11380 NW 27th Ave<br>Miami, FL 33167</div>'
+  });
 });
-
-for (var x = 0; x < addresses.length; x++) {
-    $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+addresses[x]+'&sensor=false', null, function (data) {
-        var p = data.results[0].geometry.location
-        // var latlng = new google.maps.LatLng(p.lat, p.lng);
-        // var marker = new google.maps.Marker({
-        //     position: latlng,
-        //     map: map
-        // });
-
-        // marker.addListener('click', function() {
-        //   infowindow.open(map, marker);
-        // });
-
-        for (var i = 0; i < addresses.length; i++) {
-        var marker = addresses[i];
-        google.maps.event.addListener(marker, 'click', function () {
-        // where I have added .html to the marker object.
-        infowindow.setContent(this.html);
-        infowindow.open(map, this);
-        });
-}
-
-    });
-}
