@@ -48,6 +48,18 @@
   color: #7d7d7d;
 }
 
+/* ---------------- Register C2A ------------------------ */
+#donation {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+
+/* ---------------- Expo participants section ------------------------ */
+#participants-slider {
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
 
 /* ------------------------  Register Section ------------------------*/
 .register-bg {

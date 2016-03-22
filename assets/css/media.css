@@ -322,9 +322,9 @@
         font-size: 14px;
         padding: 6px 40px;
     }
-    .variation-slider .title-wrap{
+    /*.variation-slider .title-wrap{
         display: none;
-    }
+    }*/
 }
 @media (max-width:380px){
     .schedule-handler{

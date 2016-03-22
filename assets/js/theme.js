@@ -100,6 +100,25 @@ jQuery(document).ready(function () {
     // Brands Slider End
     // ---------------------------------------------------------------------------------------
 
+    // Expo Participants Slider Start
+    jQuery("#participants-carousel-slider").owlCarousel({
+        autoPlay: true, //Set AutoPlay to 3 seconds
+        items: 6,
+        itemsDesktop: [1199, 6],
+        itemsDesktopSmall: [1024, 6],
+        itemsTablet: [991, 4],
+        itemsTabletSmall: [767, 3],
+        itemsMobile: [480, 2]
+    });
+    jQuery(".participants-slider .next").click(function () {
+        jQuery("#participants-carousel-slider").trigger('owl.next');
+    });
+    jQuery(".participants-slider .prev").click(function () {
+        jQuery("#participants-carousel-slider").trigger('owl.prev');
+    });
+    // Brands Slider End
+    // ---------------------------------------------------------------------------------------
+
 
     // ---------------------------------------------------------------------------------------
     // Testimonials Slider Start
