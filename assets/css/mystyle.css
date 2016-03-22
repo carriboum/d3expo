@@ -72,6 +72,18 @@
   margin-top: 3em;
 }
 
+/* ------------------------ Schedule section ------------------------ */
+.sched-day {
+  color: #122a4e;
+}
+.sched-campus {
+  color: #ed3287;
+}
+.sched-btns {
+  text-align:center;
+  padding-top:1em;
+}
+
 /* ------------------------ FAQ accordion styling ------------------------ */
 .faq-accordion > .panel {
   border:none;
