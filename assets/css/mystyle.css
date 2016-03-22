@@ -156,6 +156,18 @@
     background: rgba(30, 30, 30, 0.9) none repeat scroll 0 0;
 }
 
+/* ------------------------ Mentors Page ------------------------ */
+.mentors-bg {
+  background-image: url(../img/background/slider-bg-4.jpg);
+  background-repeat: no-repeat;
+}
+
+.mentor-overlay {
+  background-color: rgba(8,25,51,0.7) !important;
+  color: #fff;
+  padding: 1em 1.5em 0 1.5em;
+}
+
 
 /* ------------------------ Footer ------------------------ */
 .footer-social-bg {
