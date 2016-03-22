@@ -84,12 +84,12 @@ jQuery(document).ready(function () {
     // Brands Slider Start
     jQuery("#brands-carousel-slider").owlCarousel({
         autoPlay: true, //Set AutoPlay to 3 seconds
-        items: 6,
-        itemsDesktop: [1199, 6],
-        itemsDesktopSmall: [1024, 6],
-        itemsTablet: [991, 4],
-        itemsTabletSmall: [767, 3],
-        itemsMobile: [480, 2]
+        items: 5,
+        itemsDesktop: [1199, 5],
+        itemsDesktopSmall: [1024, 5],
+        itemsTablet: [991, 5],
+        itemsTabletSmall: [767, 5],
+        itemsMobile: [480, 5]
     });
     jQuery(".brands-slider .next").click(function () {
         jQuery("#brands-carousel-slider").trigger('owl.next');
@@ -173,6 +173,8 @@ jQuery(document).ready(function () {
         $('#dealCountdown1').countdown({until: austDay});
         $('#dealCountdown2').countdown({until: austDay});
         $('#dealCountdown3').countdown({until: austDay});
+        $('#dealCountdown4').countdown({until: austDay});
+        $('#dealCountdown5').countdown({until: austDay});
     }
     // Countdown End
     // ---------------------------------------------------------------------------------------

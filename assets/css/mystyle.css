@@ -21,6 +21,38 @@
   background: #122a4e;
 }
 
+@media (max-width: 767px) {
+  .header-wrap {
+    background: rgba(8,25,51,0.7);
+  }
+}
+
+/* ------------------ Home section carousel ------------------ */
+@media (min-width: 1080px) {
+  .carousel-inner {
+    height: 58em;
+    margin-top: -3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-wrap {
+    margin-bottom: 0px !important;
+  }
+
+  #owl-demo {
+    height: 24em;
+  }
+
+  .carousel-inner .item {
+    height: 24em;
+  }
+
+  .carousel-inner .item img {
+    max-width: 127%;
+  }
+}
+
 
 /* ------------------------ Button to become a sponsor ------------------------ */
 .sponsor-btn {
