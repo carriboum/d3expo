@@ -98,6 +98,10 @@
   color: #ed3287;
 }
 
+#contests .blog-bg{
+    background: rgba(30, 30, 30, 0.9) none repeat scroll 0 0;
+}
+
 
 /* ------------------------ Footer ------------------------ */
 .footer-social-bg {
