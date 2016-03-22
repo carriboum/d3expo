@@ -53,6 +53,16 @@
   }
 }
 
+/* ------------------  About section ------------------  */
+#about .container .title-wrap .section-heading {
+  font-size: 32pt;
+  padding-bottom: 10px;
+}
+
+.abt-logos {
+  max-width: 90px;
+}
+
 
 /* ------------------------ Button to become a sponsor ------------------------ */
 .sponsor-btn {
