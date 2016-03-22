@@ -61,6 +61,12 @@
   padding-top: 0px;
 }
 
+/* D3 Team Section */
+.d3-team-bg{
+    background-image: url(../img/background/header-bg-5.jpg);
+    background-repeat: no-repeat;
+}
+
 /* ------------------------  Register Section ------------------------*/
 .register-bg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed3287+1,783369+58,122a4e+100 */
