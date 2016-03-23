@@ -86,7 +86,7 @@ ob_start();
 <?php
 $body = ob_get_contents();
 
-$to = 'carrie.monescalchi@gmail.com';
+$to = 'info@d3expo.com';
 $toname = 'D3 Expo';
 //$anotheraddress = 'email@example.com';
 //$anothername = 'Another Name';
