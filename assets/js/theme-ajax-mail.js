@@ -51,6 +51,11 @@ $(function () {
         else {
           tixtype = 'Professional';
         }
+        if (tixtype == '') {
+            $form.find('.input-tixtype').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+            $form.find('.input-tixtype').focus();
+            return false;
+        }
 
         // School or Organization
         var org = $form.find('.input-org').val();
