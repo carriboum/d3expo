@@ -110,10 +110,10 @@ jQuery(document).ready(function () {
         itemsTabletSmall: [767, 3],
         itemsMobile: [480, 2]
     });
-    jQuery(".participants-slider .next").click(function () {
+    jQuery(".exhibitors-slider .next").click(function () {
         jQuery("#participants-carousel-slider").trigger('owl.next');
     });
-    jQuery(".participants-slider .prev").click(function () {
+    jQuery(".exhibitors-slider .prev").click(function () {
         jQuery("#participants-carousel-slider").trigger('owl.prev');
     });
     // Brands Slider End
