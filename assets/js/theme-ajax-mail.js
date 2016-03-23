@@ -52,9 +52,43 @@ $(function () {
           tixtype = 'Professional';
         }
 
-        var dataString = 'first_name=' + first_name + '&last_name=' + last_name + '&email=' + email + '&phone=' + phone + '&tixtype=' + tixtype;
+        // School or Organization
+        var org = $form.find('.input-org').val();
+        if (org == '' || org == 'School or Organization') {
+            $form.find('.input-org').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+            $form.find('.input-org').focus();
+            return false;
+        }
 
-        // + '&tixtype=' + tixtype // for the ticket selector dropdown
+        // Field
+        var field = $form.find('.input-field').val();
+        if (field == 'Graphic Design') {
+          field = 'Graphic Design';
+        }
+        else if (field == 'Motion Graphics') {
+          field = 'Motion Graphics';
+        }
+        else if (field == 'Web') {
+          field = 'Web';
+        }
+        else if (field == 'Video') {
+          field = 'Video';
+        }
+        else {
+          field = 'Interactive Media';
+        }
+
+        // Interests at D3
+        var interest = $form.find('.input-interest').val();
+        if (interest == '') {
+            $form.find('.input-interest').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
+            $form.find('.input-interest').focus();
+            return false;
+        }
+
+        var dataString = 'first_name=' + first_name + '&last_name=' + last_name + '&email=' + email + '&phone=' + phone + '&tixtype=' + tixtype + '&org=' + org + '&field=' + field + '&interest=' + interest;
+
+
         //alert(dataString); return false;
 
         $.ajax({
@@ -65,8 +99,7 @@ $(function () {
                 $form.find('.form-alert').append('' +
                     '<div class=\"alert alert-success registration-form-alert fade in\">' +
                     '<button class=\"close\" data-dismiss=\"alert\" type=\"button\">&times;</button>' +
-                    '<strong>Registration Form Submitted!</strong> Thank you for entering your information, please click the button to select your ticket.' +
-                    '<a class="theme-btn-2 btn" href="#">Get Your Ticket</a>' +
+                    '<strong>Registration Form Submitted!</strong> Thank you for entering your information, please <strong><a style="color:#ed3287; text-decoration:underline;" href="http://www.eventbrite.com/e/d3-art-design-conference-expo-tickets-22742651884" target="_blank">CLICK HERE to get your ticket.</a></strong>' +
                     '</div>' +
                     '');
                 $form[0].reset();

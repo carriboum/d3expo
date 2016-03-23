@@ -1111,13 +1111,13 @@
                             <div class="row">
                                 <div class="form-group col-sm-12 form-alert"></div>
                                 <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
-                                    <label class="sr-only" for="rf_first_name">First Name</label>
-                                    <input type="text" placeholder="First Name" name="rf_first_name" id="rf_first_name" value="" data-toggle="tooltip" title="First Name is required" class="form-control input-first-name">
+                                    <label class="sr-only" for="rf_first_name">First and Last Name</label>
+                                    <input type="text" placeholder="First and Last Name" name="rf_first_name" id="rf_first_name" value="" data-toggle="tooltip" title="First Name is required" class="form-control input-first-name">
                                 </div>
-                                <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
+                                <!-- <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
                                     <label class="sr-only" for="rf_last_name">Last Name</label>
                                     <input type="text" placeholder="Last Name" name="rf_last_name" id="rf_last_name" value="" data-toggle="tooltip" title="Last Name is required" class="form-control input-last-name">
-                                </div>
+                                </div> -->
                                 <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
                                     <label class="sr-only" for="rf_email">Email Address</label>
                                     <input type="text" placeholder="Email Address" name="rf_email" id="rf_email" value="" data-toggle="tooltip" title="Email is required" class="form-control input-email">
@@ -1133,6 +1133,26 @@
                                       <option value="Student">
                                       <option value="Professional">
                                     </datalist>
+                                </div>
+                                <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
+                                    <label class="sr-only" for="rf_org">School or Organization</label>
+                                    <input type="text" placeholder="School or Organization" name="rf_org" id="rf_org" value="" data-toggle="tooltip" title="School or Organization is required" class="form-control input-org">
+                                </div>
+                                <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
+                                    <label class="sr-only" for="rf_field">Your Field</label>
+                                    <input list="fields" placeholder="Select Your Field" name="rf_field" id="rf_field" data-toggle="tooltip" title="Ticket type is required" class="form-control input-field">
+                                    <datalist id="fields">
+                                      <option value="Graphic Design">
+                                      <option value="Motion Graphics">
+                                      <option value="Web">
+                                      <option value="Video">
+                                      <option value="Interactive Media">
+                                    </datalist>
+                                </div>
+                                <div class="form-group col-sm-6 wow fadeInDown"  data-wow-delay="0.5s">
+                                  <label class="sr-only" for="rf_interest">What are you most interested in at D3?</label>
+                                  <!-- <input type="textarea" placeholder="What are you most interested in at D3?" name="rf_interest" id="rf_interest" data-toggle="tooltip" title="Please tell us what you are most interested in seeing at D3." class="form-control input-interest"> -->
+                                  <textarea rows="4" cols="50" placeholder="What are you most interested in at D3?" name="rf_interest" id="rf_interest" data-toggle="tooltip" title="Please tell us what you are most interested in seeing at D3." class="form-control input-interest"></textarea>
                                 </div>
                                 <div class="form-group col-sm-offset-3 col-sm-6 button-style">
                                     <label class="theme-btn btn wow zoomIn"  data-wow-delay="0.5s">

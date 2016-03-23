@@ -24,6 +24,21 @@ if ((isset($_POST['tixtype'])) && (strlen(trim($_POST['tixtype'])) > 0)) {
 } else {
     $tixtype = 'No ticket type selected';
 }
+if ((isset($_POST['org'])) && (strlen(trim($_POST['org'])) > 0)) {
+    $org = stripslashes(strip_tags($_POST['org']));
+} else {
+    $org = 'No school or organization entered';
+}
+if ((isset($_POST['field'])) && (strlen(trim($_POST['field'])) > 0)) {
+    $field = stripslashes(strip_tags($_POST['field']));
+} else {
+    $field = 'No field selected';
+}
+if ((isset($_POST['interest'])) && (strlen(trim($_POST['interest'])) > 0)) {
+    $interest = stripslashes(strip_tags($_POST['interest']));
+} else {
+    $interest = 'No interests entered';
+}
 ob_start();
 ?>
 <html>
@@ -34,24 +49,36 @@ ob_start();
 <body>
 <table width="550" border="0" cellspacing="0" cellpadding="15">
     <tr bgcolor="#eeffee">
-        <td>First Name</td>
+        <td>Name</td>
         <td><?php echo $first_name; ?></td>
     </tr>
-    <tr bgcolor="#eeeeff">
+    <!-- <tr bgcolor="#eeeeff">
         <td>Last Name</td>
         <td><?php echo $last_name; ?></td>
-    </tr>
-    <tr bgcolor="#eeffee">
+    </tr> -->
+    <tr bgcolor="#eeeeff">
         <td>Email Address</td>
         <td><?php echo $email; ?></td>
     </tr>
-    <tr bgcolor="#eeeeff">
+    <!-- <tr bgcolor="#eeeeff">
         <td>Phone Number</td>
         <td><?php echo $phone; ?></td>
-    </tr>
+    </tr> -->
     <tr bgcolor="#eeffee">
         <td>Ticket Type</td>
         <td><?php echo $tixtype; ?></td>
+    </tr>
+    <tr bgcolor="#eeeeff">
+        <td>School or Organization</td>
+        <td><?php echo $org; ?></td>
+    </tr>
+    <tr bgcolor="#eeffee">
+        <td>Field</td>
+        <td><?php echo $field; ?></td>
+    </tr>
+    <tr bgcolor="#eeeeff">
+        <td>Interests at D3</td>
+        <td><?php echo $interest; ?></td>
     </tr>
 </table>
 </body>
