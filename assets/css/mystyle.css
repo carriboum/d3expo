@@ -60,7 +60,10 @@
 }
 
 .abt-logos {
-  max-width: 90px;
+  max-height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
 }
 
 .abt-video-txt {
