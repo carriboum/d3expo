@@ -151,6 +151,11 @@
     background-repeat: no-repeat;
 }
 
+/* ----- Ticket Pricing Section ----- */
+.cut-price {
+  text-decoration: line-through;
+}
+
 /* ------------------------  Register Section ------------------------*/
 .register-bg {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed3287+1,783369+58,122a4e+100 */
