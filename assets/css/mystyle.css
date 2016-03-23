@@ -129,6 +129,12 @@
   padding-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  #donation {
+    padding-top: 0 !important;
+  }
+}
+
 
 /* ---------------- Expo participants section ------------------------ */
 #exhibitors-slider {
