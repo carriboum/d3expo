@@ -103,7 +103,7 @@ $mail->AddAddress($to, $toname); // Put your email
 $mail->WordWrap = 50;
 $mail->IsHTML(true);
 
-$mail->Subject = "Demo Form:  Registration form submitted";
+$mail->Subject = "New D3 Registration";
 $mail->Body = $body;
 $mail->AltBody = $message;
 
