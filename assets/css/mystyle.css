@@ -63,6 +63,27 @@
   max-width: 90px;
 }
 
+.abt-video-txt {
+  color: #fff;
+  padding: 1.5em 1.5em 2em 1.5em;
+  margin-top: 2em;
+}
+
+.abt-video-txt h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.abt-video {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.abt-video-row {
+  min-height: 30em;
+  background-color: rgba(8,25,51,0.9) !important;
+}
+
 
 /* ------------------------ Button to become a sponsor ------------------------ */
 .sponsor-btn {
