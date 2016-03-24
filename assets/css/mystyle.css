@@ -138,6 +138,12 @@
   }
 }
 
+/* ------------- sponsors slider ---------- */
+.sponsors-slider .owl-carousel .item img {
+  max-height: 67px !important;
+  min-height: 49px;
+}
+
 
 /* ---------------- Expo participants section ------------------------ */
 #exhibitors-slider {
