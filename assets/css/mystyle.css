@@ -88,12 +88,50 @@
 }
 
 
-/* ------------------------ Button to become a sponsor ------------------------ */
+/* ------------------------ Sponsors section ------------------------ */
 .sponsor-btn {
   display: table;
   margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
+}
+
+.sponsor-type {
+  height:9px;
+  margin-bottom:10px;
+  padding:0;
+  width: 9em;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  font-size: 7pt;
+  padding-bottom: 14px;
+  padding-top: 3px;
+  color: black;
+}
+
+.partner {
+  background-color:#fec0e0 !important;
+}
+
+.supporter {
+  background-color:#c7e8c8 !important;
+}
+
+.exhibitor {
+  background-color: #ffaeb9 !important;
+}
+
+.food {
+  background-color: #ffd7ab !important;
+}
+
+.liveart {
+  background-color: #b2eafb !important;
+}
+
+.contest {
+  background-color: #ed3287 !important;
 }
 
 /* ------------------------ Schedule section ------------------------ */
