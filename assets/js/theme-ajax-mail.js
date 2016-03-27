@@ -45,11 +45,11 @@ $(function () {
 
         // Ticket Type
         var tixtype = $form.find('.input-tixtype').val();
-        if (tixtype == 'Student') {
-          tixtype = 'Student';
+        if (tixtype == 'GA') {
+          tixtype = 'GA';
         }
         else {
-          tixtype = 'Professional';
+          tixtype = 'Workshop';
         }
         if (tixtype == '') {
             $form.find('.input-tixtype').tooltip({placement: 'top', trigger: 'manual'}).tooltip('show');
