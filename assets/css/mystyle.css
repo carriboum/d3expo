@@ -189,6 +189,42 @@
   padding-top: 0px;
 }
 
+.exhibitor-type {
+  height:9px;
+  margin-bottom:10px;
+  padding:0;
+  width: 10em;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  font-size: 7pt;
+  padding-bottom: 14px;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.feat {
+  background-color: #004FDE !important;
+  color: #fff;
+}
+
+.exhib-none {
+  background-color: transparent !important;
+}
+
+.exhibitors-slider .owl-carousel .item .img-reg {
+  max-height: 50px !important;
+  min-height: 52px;
+  margin-left: 30%;
+}
+
+.exhibitors-slider .owl-carousel .item .img-feat {
+  max-height: 59px !important;
+  min-height: 49px;
+  margin-left: 13%;
+}
+
+
 /* D3 Team Section */
 .d3-team-bg{
     background-image: url(../img/background/header-bg-5.jpg);
