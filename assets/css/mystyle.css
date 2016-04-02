@@ -216,6 +216,7 @@
   max-height: 50px !important;
   min-height: 52px;
   margin-left: 30%;
+
 }
 
 .exhibitors-slider .owl-carousel .item .img-feat {
@@ -225,7 +226,7 @@
 }
 
 
-/* D3 Team Section */
+/*----------- D3 Team Section---------- */
 .d3-team-bg{
     background-image: url(../img/background/header-bg-5.jpg);
     background-repeat: no-repeat;
