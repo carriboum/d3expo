@@ -21,6 +21,10 @@
   background: #122a4e;
 }
 
+.left-15 {
+  margin-left: 15px;
+}
+
 @media (max-width: 767px) {
   .header-wrap {
     background: rgba(8,25,51,0.7);
